@@ -4,3 +4,4 @@ webAppErr.log
 .vscode/**
 .env
 bin/*
+package-lock.json
