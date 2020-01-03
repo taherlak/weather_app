@@ -1,0 +1,25 @@
+{
+  "name": "weather-assignment",
+  "version": "1.0.0",
+  "description": "This application includes API's to get different weather details.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "forever start --minUptime 1000 --spinSleepTime 1000 -o webApp.log -e webAppErr.log ./bin/www",
+    "dev-start": "node ./bin/www",
+    "stop": "forever stop ./bin/www"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^15.1.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-joi-middleware": "^1.0.0",
+    "express-session": "^1.17.0",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "request": "^2.88.0"
+  }
+}
